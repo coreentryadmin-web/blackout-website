@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BlackOut Trades">
+  <rect width="64" height="64" rx="14" fill="#111"/>
+  <path
+    d="M32 12 20 36h8l-4 16 16-28h-8l4-12Z"
+    fill="#fff"
+  />
+</svg>
