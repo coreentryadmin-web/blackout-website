@@ -5,6 +5,7 @@ export const site = {
     "Join BlackOut Trades on Discord — flow, levels, and a focused community built for active traders.",
   logo: "/favicon.svg",
   heroImage: "/logo.png",
+  whopLogo: "/whop-logo.jpg",
   discordInvite: "https://discord.gg/2SJN9jx8S",
   whopUrl: "https://whop.com/blackout-2d9c/",
   features: [

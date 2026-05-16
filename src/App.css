@@ -132,7 +132,7 @@ img {
 }
 
 .btn__icon--whop {
-  color: #fa5c1f;
+  object-fit: contain;
 }
 
 .btn--primary .btn__icon--discord {
@@ -140,7 +140,7 @@ img {
 }
 
 .btn--primary .btn__icon--whop {
-  color: #fa5c1f;
+  object-fit: contain;
 }
 
 .btn--ghost .btn__icon--discord,
@@ -150,7 +150,7 @@ img {
 
 .btn--ghost .btn__icon--whop,
 .btn--outline .btn__icon--whop {
-  color: #fa5c1f;
+  object-fit: contain;
 }
 
 .btn--sm {
