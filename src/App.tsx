@@ -1,3 +1,4 @@
+import { DiscordIcon, WhopIcon } from "./components/Icons";
 import { site } from "./config/site";
 
 function App() {
@@ -13,9 +14,11 @@ function App() {
             <a href="#features">Features</a>
             <a href="#faq">FAQ</a>
             <a className="btn btn--ghost btn--sm" href={site.discordInvite} target="_blank" rel="noopener noreferrer">
+              <DiscordIcon className="btn__icon btn__icon--discord" />
               Discord
             </a>
             <a className="btn btn--primary btn--sm" href={site.whopUrl} target="_blank" rel="noopener noreferrer">
+              <WhopIcon className="btn__icon btn__icon--whop" />
               Join on Whop
             </a>
           </nav>
@@ -30,9 +33,11 @@ function App() {
             <p className="hero__lead">{site.description}</p>
             <div className="hero__actions">
               <a className="btn btn--primary btn--lg" href={site.discordInvite} target="_blank" rel="noopener noreferrer">
+                <DiscordIcon className="btn__icon btn__icon--discord" />
                 Join Discord
               </a>
               <a className="btn btn--outline btn--lg" href={site.whopUrl} target="_blank" rel="noopener noreferrer">
+                <WhopIcon className="btn__icon btn__icon--whop" />
                 View memberships
               </a>
             </div>
@@ -60,9 +65,11 @@ function App() {
             <p className="cta__text">Start free on Discord. Upgrade on Whop when you want the full experience.</p>
             <div className="cta__actions">
               <a className="btn btn--primary btn--lg" href={site.discordInvite} target="_blank" rel="noopener noreferrer">
+                <DiscordIcon className="btn__icon btn__icon--discord" />
                 Join Discord
               </a>
               <a className="btn btn--outline btn--lg" href={site.whopUrl} target="_blank" rel="noopener noreferrer">
+                <WhopIcon className="btn__icon btn__icon--whop" />
                 Go to Whop
               </a>
             </div>
