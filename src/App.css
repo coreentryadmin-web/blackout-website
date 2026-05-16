@@ -23,6 +23,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -120,7 +132,7 @@ img {
 }
 
 .btn__icon--whop {
-  color: #fa5c1f;
+  object-fit: contain;
 }
 
 .btn--primary .btn__icon--discord {
@@ -128,7 +140,7 @@ img {
 }
 
 .btn--primary .btn__icon--whop {
-  color: #fa5c1f;
+  object-fit: contain;
 }
 
 .btn--ghost .btn__icon--discord,
@@ -138,7 +150,7 @@ img {
 
 .btn--ghost .btn__icon--whop,
 .btn--outline .btn__icon--whop {
-  color: #fa5c1f;
+  object-fit: contain;
 }
 
 .btn--sm {
@@ -200,7 +212,20 @@ img {
 .hero__inner {
   position: relative;
   text-align: center;
-  max-width: 720px;
+  max-width: 920px;
+}
+
+.hero__visual {
+  margin: 0 auto 1.75rem;
+  max-width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
 }
 
 .eyebrow {

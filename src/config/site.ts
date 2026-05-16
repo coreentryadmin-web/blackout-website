@@ -3,7 +3,9 @@ export const site = {
   tagline: "Trade. Execute. Dominate.",
   description:
     "Join BlackOut Trades on Discord — flow, levels, and a focused community built for active traders.",
-  logo: "/logo.svg",
+  logo: "/favicon.svg",
+  heroImage: "/logo.png",
+  whopLogo: "/whop-logo.jpg",
   discordInvite: "https://discord.gg/2SJN9jx8S",
   whopUrl: "https://whop.com/blackout-2d9c/",
   features: [

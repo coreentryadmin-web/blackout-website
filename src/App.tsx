@@ -7,7 +7,7 @@ function App() {
       <header className="header">
         <div className="container header__inner">
           <a className="brand" href="/">
-            <img className="brand__logo" src={site.logo} alt="" width={40} height={40} />
+            <img className="brand__logo" src={site.logo} alt="" width={32} height={32} />
             <span className="brand__name">{site.name}</span>
           </a>
           <nav className="nav" aria-label="Primary">
@@ -28,8 +28,19 @@ function App() {
       <main>
         <section className="hero">
           <div className="container hero__inner">
-            <p className="eyebrow">Trading community</p>
-            <h1 className="hero__title">{site.tagline}</h1>
+            <h1 className="sr-only">
+              {site.name} — {site.tagline}
+            </h1>
+            <div className="hero__visual">
+              <img
+                className="hero__image"
+                src={site.heroImage}
+                alt={`${site.name} — ${site.tagline}`}
+                width={1200}
+                height={675}
+                fetchPriority="high"
+              />
+            </div>
             <p className="hero__lead">{site.description}</p>
             <div className="hero__actions">
               <a className="btn btn--primary btn--lg" href={site.discordInvite} target="_blank" rel="noopener noreferrer">

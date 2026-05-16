@@ -1,3 +1,5 @@
+import { site } from "../config/site";
+
 type IconProps = {
   className?: string;
 };
@@ -12,12 +14,13 @@ export function DiscordIcon({ className }: IconProps) {
 
 export function WhopIcon({ className }: IconProps) {
   return (
-    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
-      <rect width="24" height="24" rx="6" fill="currentColor" />
-      <path
-        fill="#000"
-        d="M6.2 16.5V7.5h2.1l2.35 4.55 2.35-4.55h2.1v9h-2.05V11.1l-2.2 4.25h-1.1l-2.2-4.25v5.4H6.2z"
-      />
-    </svg>
+    <img
+      className={className}
+      src={site.whopLogo}
+      alt=""
+      width={24}
+      height={24}
+      decoding="async"
+    />
   );
 }
