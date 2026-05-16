@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { DiscordIcon, WhopIcon } from "./components/Icons";
 import { site } from "./config/site";
 
@@ -41,6 +42,7 @@ function App() {
                 fetchPriority="high"
               />
             </div>
+            <p className="hero__eyebrow">Elite trading community</p>
             <p className="hero__lead">{site.description}</p>
             <div className="hero__actions">
               <a className="btn btn--primary btn--lg" href={site.discordInvite} target="_blank" rel="noopener noreferrer">
@@ -57,11 +59,12 @@ function App() {
 
         <section className="section" id="features">
           <div className="container">
+            <p className="section__label">Why join us</p>
             <h2 className="section__title">Built for active traders</h2>
             <p className="section__lead">Everything you need to stay aligned with the market — in one place.</p>
             <ul className="grid">
-              {site.features.map((feature) => (
-                <li key={feature.title} className="card">
+              {site.features.map((feature, index) => (
+                <li key={feature.title} className="card" style={{ "--card-i": index } as CSSProperties}>
                   <h3 className="card__title">{feature.title}</h3>
                   <p className="card__text">{feature.description}</p>
                 </li>
@@ -72,6 +75,7 @@ function App() {
 
         <section className="section section--cta">
           <div className="container cta">
+            <p className="section__label">Get started</p>
             <h2 className="cta__title">Ready to plug in?</h2>
             <p className="cta__text">Start free on Discord. Upgrade on Whop when you want the full experience.</p>
             <div className="cta__actions">
@@ -89,6 +93,7 @@ function App() {
 
         <section className="section section--faq" id="faq">
           <div className="container">
+            <p className="section__label">Questions</p>
             <h2 className="section__title">FAQ</h2>
             <dl className="faq">
               {site.faq.map((item) => (
