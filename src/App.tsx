@@ -74,7 +74,7 @@ function App() {
         </section>
 
         <section className="section section--cta">
-          <motion.div className="container cta">
+          <div className="container cta">
             <p className="section__label">Get started</p>
             <h2 className="cta__title">Ready to plug in?</h2>
             <p className="cta__text">Start free on Discord. Upgrade on Whop when you want the full experience.</p>
