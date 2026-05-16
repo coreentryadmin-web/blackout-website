@@ -53,16 +53,6 @@ function App() {
               <div className="hero__frame-shine" aria-hidden />
             </div>
 
-            <ul className="hero__pills" aria-label="Trading focus">
-              {site.tradingStyles.map((style) => (
-                <li key={style.id} className={`hero__pill hero__pill--${style.id}`}>
-                  <span className="hero__pill-tag">{style.tag}</span>
-                  <span className="hero__pill-title">{style.title}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="hero__eyebrow">Operator community · Discord</p>
             <p className="hero__lead">{site.description}</p>
             <div className="hero__actions">
               <a className="btn btn--primary btn--lg" href={site.discordInvite} target="_blank" rel="noopener noreferrer">
