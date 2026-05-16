@@ -131,26 +131,27 @@ img {
   color: #5865f2;
 }
 
-.btn__icon--whop {
+.btn__icon--whop-img {
+  width: auto;
+  height: 1.35em;
+  max-width: 4.75rem;
   object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.btn--sm .btn__icon--whop-img {
+  max-width: 3.75rem;
+  height: 1.2em;
 }
 
 .btn--primary .btn__icon--discord {
   color: #5865f2;
 }
 
-.btn--primary .btn__icon--whop {
-  object-fit: contain;
-}
-
 .btn--ghost .btn__icon--discord,
 .btn--outline .btn__icon--discord {
   color: #5865f2;
-}
-
-.btn--ghost .btn__icon--whop,
-.btn--outline .btn__icon--whop {
-  object-fit: contain;
 }
 
 .btn--sm {

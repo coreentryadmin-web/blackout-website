@@ -15,11 +15,9 @@ export function DiscordIcon({ className }: IconProps) {
 export function WhopIcon({ className }: IconProps) {
   return (
     <img
-      className={className}
+      className={[className, "btn__icon--whop-img"].filter(Boolean).join(" ")}
       src={site.whopLogo}
       alt=""
-      width={24}
-      height={24}
       decoding="async"
     />
   );
